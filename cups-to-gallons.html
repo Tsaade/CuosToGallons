@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How Many Teaspoons in a Tablespoon? Full Conversion Chart & Calculator</title>
-  <meta name="description" content="How many teaspoons in a tablespoon? The answer is 3 teaspoons. Use our free calculator and full conversion chart for teaspoons, tablespoons, and cups." />
+  <title>How Many Cups in a Gallon? Full Conversion Chart & Calculator</title>
+  <meta name="description" content="How many cups in a gallon? The answer is 16 cups. Use our free calculator and full conversion chart for gallons, quarts, pints, and cups." />
 
+  <!-- SEO: Tell Google this page is the authoritative answer -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -13,42 +14,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How many teaspoons in a tablespoon?",
+        "name": "How many cups in a gallon?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "There are 3 teaspoons in a tablespoon."
+          "text": "There are 16 cups in a gallon."
         }
       },
       {
         "@type": "Question",
-        "name": "How many teaspoons in 2 tablespoons?",
+        "name": "How many cups in a half gallon?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "There are 6 teaspoons in 2 tablespoons."
+          "text": "There are 8 cups in a half gallon."
         }
       },
       {
         "@type": "Question",
-        "name": "How many tablespoons in a cup?",
+        "name": "How many cups in a quart?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "There are 16 tablespoons in a cup."
+          "text": "There are 4 cups in a quart."
         }
       },
       {
         "@type": "Question",
-        "name": "How many teaspoons in a cup?",
+        "name": "How many cups in a pint?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "There are 48 teaspoons in a cup."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is half of 1 tablespoon?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Half of 1 tablespoon is 1.5 teaspoons."
+          "text": "There are 2 cups in a pint."
         }
       }
     ]
@@ -80,6 +73,7 @@
       font-size: 16px;
     }
 
+    /* ── AD PLACEHOLDER STYLES ── */
     .ad-slot {
       background: #f0f0f0;
       border: 1px dashed #bbb;
@@ -96,6 +90,7 @@
     .ad-mid { width: 100%; max-width: 728px; height: 90px; margin: 2.5rem auto; display: block; }
     .ad-bottom { width: 100%; max-width: 336px; height: 280px; margin: 2rem auto; display: block; }
 
+    /* ── LAYOUT ── */
     header {
       border-bottom: 1px solid var(--border);
       padding: 1rem 1.5rem;
@@ -131,6 +126,7 @@
       padding: 2rem 1.5rem 4rem;
     }
 
+    /* ── HERO ANSWER ── */
     .hero {
       text-align: center;
       padding: 2.5rem 0 2rem;
@@ -171,6 +167,7 @@
       margin: 0.75rem auto 0;
     }
 
+    /* ── QUICK ANSWERS ── */
     .quick-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -197,6 +194,7 @@
       margin-top: 2px;
     }
 
+    /* ── SECTION HEADINGS ── */
     h2 {
       font-family: 'Lora', serif;
       font-size: 1.4rem;
@@ -213,6 +211,7 @@
     }
     p { margin-bottom: 1rem; color: var(--ink-muted); }
 
+    /* ── CONVERSION TABLE ── */
     .table-wrap { overflow-x: auto; margin: 1rem 0 2rem; }
     table {
       width: 100%;
@@ -234,6 +233,7 @@
     tbody td:first-child { font-weight: 500; color: var(--ink); }
     .highlight-row td { background: var(--accent-light) !important; color: var(--accent); font-weight: 600; }
 
+    /* ── CALCULATOR ── */
     .calc-box {
       background: #fff;
       border: 1px solid var(--border);
@@ -289,6 +289,7 @@
     }
     .calc-result.visible { display: block; }
 
+    /* ── TIP BOX ── */
     .tip {
       background: var(--accent-light);
       border-left: 3px solid var(--accent);
@@ -300,32 +301,13 @@
     }
     .tip strong { color: var(--accent); }
 
-    .related-links {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.5rem;
-      margin: 2rem 0;
-    }
-    .related-links h3 { margin-top: 0; font-family: 'Lora', serif; font-size: 1.1rem; }
-    .related-links a {
-      display: inline-block;
-      background: var(--accent-light);
-      color: var(--accent);
-      text-decoration: none;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 14px;
-      margin: 4px 4px 4px 0;
-      transition: background 0.15s;
-    }
-    .related-links a:hover { background: #f9d5cb; }
-
+    /* ── FAQ ── */
     .faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
     .faq-item:last-child { border-bottom: none; }
     .faq-q { font-weight: 500; color: var(--ink); margin-bottom: 0.4rem; font-size: 15px; }
     .faq-a { font-size: 14px; color: var(--ink-muted); margin: 0; }
 
+    /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border);
       text-align: center;
@@ -337,7 +319,6 @@
     @media (max-width: 520px) {
       .calc-row { flex-direction: column; }
       .calc-btn { width: 100%; }
-      nav { display: none; }
     }
   </style>
 </head>
@@ -354,42 +335,46 @@
   </div>
 </header>
 
+<!-- TOP AD UNIT — replace with your Google AdSense code -->
 <div style="display:flex; justify-content:center; padding: 1rem 1.5rem 0;">
   <div class="ad-slot ad-top">Advertisement</div>
 </div>
 
 <main>
 
+  <!-- ── HERO: The answer, front and center ── -->
   <section class="hero">
-    <h1>How Many Teaspoons in a Tablespoon?</h1>
+    <h1>How Many Cups in a Gallon?</h1>
     <div class="answer-box">
-      <span class="number">3</span>
-      <span class="label">teaspoons in 1 tablespoon</span>
+      <span class="number">16</span>
+      <span class="label">cups in 1 gallon</span>
     </div>
-    <p class="hero-sub">There are exactly <strong>3 teaspoons</strong> in a tablespoon. Use the chart and calculator below for any amount.</p>
+    <p class="hero-sub">There are exactly <strong>16 cups</strong> in a US gallon. Use the chart and calculator below for any amount.</p>
   </section>
 
+  <!-- ── QUICK ANSWER CARDS ── -->
   <div class="quick-grid">
     <div class="quick-card">
-      <span class="q-num">3</span>
-      <span class="q-label">tsp in 1 tbsp</span>
-    </div>
-    <div class="quick-card">
-      <span class="q-num">6</span>
-      <span class="q-label">tsp in 2 tbsp</span>
-    </div>
-    <div class="quick-card">
-      <span class="q-num">48</span>
-      <span class="q-label">tsp in 1 cup</span>
-    </div>
-    <div class="quick-card">
       <span class="q-num">16</span>
-      <span class="q-label">tbsp in 1 cup</span>
+      <span class="q-label">cups in a gallon</span>
+    </div>
+    <div class="quick-card">
+      <span class="q-num">8</span>
+      <span class="q-label">cups in a half gallon</span>
+    </div>
+    <div class="quick-card">
+      <span class="q-num">4</span>
+      <span class="q-label">cups in a quart</span>
+    </div>
+    <div class="quick-card">
+      <span class="q-num">2</span>
+      <span class="q-label">cups in a pint</span>
     </div>
   </div>
 
+  <!-- ── CALCULATOR ── -->
   <div class="calc-box">
-    <h2>Teaspoon & Tablespoon Converter</h2>
+    <h2>Cups Converter</h2>
     <p style="margin-bottom:1.25rem; font-size:14px;">Enter any amount and convert instantly.</p>
     <div class="calc-row">
       <div class="calc-group">
@@ -399,19 +384,25 @@
       <div class="calc-group">
         <label for="from-unit">From</label>
         <select id="from-unit">
-          <option value="cup">Cups</option>
+          <option value="gallon">Gallons</option>
+          <option value="quart">Quarts</option>
+          <option value="pint">Pints</option>
+          <option value="cup" selected>Cups</option>
           <option value="fluid_oz">Fluid Ounces</option>
-          <option value="tablespoon" selected>Tablespoons</option>
+          <option value="tablespoon">Tablespoons</option>
           <option value="teaspoon">Teaspoons</option>
         </select>
       </div>
       <div class="calc-group">
         <label for="to-unit">To</label>
         <select id="to-unit">
+          <option value="gallon" selected>Gallons</option>
+          <option value="quart">Quarts</option>
+          <option value="pint">Pints</option>
           <option value="cup">Cups</option>
           <option value="fluid_oz">Fluid Ounces</option>
           <option value="tablespoon">Tablespoons</option>
-          <option value="teaspoon" selected>Teaspoons</option>
+          <option value="teaspoon">Teaspoons</option>
         </select>
       </div>
       <button class="calc-btn" onclick="convert()">Convert</button>
@@ -419,100 +410,89 @@
     <div class="calc-result" id="result-box"></div>
   </div>
 
+  <!-- MID AD UNIT -->
   <div class="ad-slot ad-mid">Advertisement</div>
 
-  <h2>Full Teaspoon & Tablespoon Conversion Chart</h2>
-  <p>This table covers every common teaspoon and tablespoon conversion you'll need in the kitchen.</p>
+  <!-- ── FULL CONVERSION TABLE ── -->
+  <h2>Full Conversion Chart</h2>
+  <p>This table shows how gallons, quarts, pints, cups, fluid ounces, tablespoons, and teaspoons all relate to each other — the entire US liquid measurement system in one place.</p>
 
   <div class="table-wrap">
     <table>
       <thead>
         <tr>
-          <th>Tablespoons</th>
-          <th>Teaspoons</th>
-          <th>Fluid Ounces</th>
+          <th>Measurement</th>
+          <th>Gallons</th>
+          <th>Quarts</th>
+          <th>Pints</th>
           <th>Cups</th>
-          <th>Milliliters</th>
+          <th>Fl. Oz</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>⅛ tbsp</td><td>⅜ tsp</td><td>—</td><td>—</td><td>0.6 ml</td>
-        </tr>
-        <tr>
-          <td>¼ tbsp</td><td>¾ tsp</td><td>—</td><td>—</td><td>1.2 ml</td>
-        </tr>
-        <tr>
-          <td>½ tbsp</td><td>1½ tsp</td><td>¼ fl oz</td><td>—</td><td>7.4 ml</td>
-        </tr>
         <tr class="highlight-row">
-          <td>1 tbsp</td><td>3 tsp</td><td>½ fl oz</td><td>1/16 cup</td><td>14.8 ml</td>
+          <td>1 Gallon</td><td>1</td><td>4</td><td>8</td><td>16</td><td>128</td>
         </tr>
         <tr>
-          <td>2 tbsp</td><td>6 tsp</td><td>1 fl oz</td><td>⅛ cup</td><td>29.6 ml</td>
+          <td>½ Gallon</td><td>0.5</td><td>2</td><td>4</td><td>8</td><td>64</td>
         </tr>
         <tr>
-          <td>4 tbsp</td><td>12 tsp</td><td>2 fl oz</td><td>¼ cup</td><td>59.1 ml</td>
+          <td>¼ Gallon</td><td>0.25</td><td>1</td><td>2</td><td>4</td><td>32</td>
         </tr>
         <tr>
-          <td>8 tbsp</td><td>24 tsp</td><td>4 fl oz</td><td>½ cup</td><td>118.3 ml</td>
+          <td>1 Quart</td><td>¼</td><td>1</td><td>2</td><td>4</td><td>32</td>
         </tr>
         <tr>
-          <td>12 tbsp</td><td>36 tsp</td><td>6 fl oz</td><td>¾ cup</td><td>177.4 ml</td>
+          <td>1 Pint</td><td>⅛</td><td>½</td><td>1</td><td>2</td><td>16</td>
         </tr>
         <tr>
-          <td>16 tbsp</td><td>48 tsp</td><td>8 fl oz</td><td>1 cup</td><td>236.6 ml</td>
+          <td>1 Cup</td><td>1/16</td><td>¼</td><td>½</td><td>1</td><td>8</td>
+        </tr>
+        <tr>
+          <td>1 Fl. Oz</td><td>1/128</td><td>1/32</td><td>1/16</td><td>⅛</td><td>1</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <div class="tip">
-    <strong>Easy way to remember:</strong> 3 teaspoons = 1 tablespoon. So if a recipe calls for 1 tbsp and you only have a teaspoon, just fill it 3 times!
+    <strong>Easy way to remember:</strong> A gallon holds 4 quarts → each quart holds 2 pints → each pint holds 2 cups. So: 4 × 2 × 2 = 16 cups per gallon.
   </div>
 
-  <h2>Why This Matters When Cooking</h2>
-  <p>Teaspoons and tablespoons are the most used measurements in everyday cooking — especially for spices, oils, butter, and baking powder. Getting them wrong can completely change a dish, which is why so many people search for this conversion.</p>
+  <!-- ── EXPLAINER ── -->
+  <h2>Why This Matters in the Kitchen</h2>
+  <p>Most US recipes use cups, but many ingredients — especially liquids like milk, broth, or juice — are sold by the quart or gallon. Knowing these conversions helps you scale recipes up or down without guessing.</p>
 
-  <h3>Halving a recipe</h3>
-  <p>This is the most common reason people look this up. If a recipe calls for 1 tablespoon of something and you want to make half the recipe, you need 1½ teaspoons. Knowing that 1 tbsp = 3 tsp makes halving and doubling recipes a breeze.</p>
+  <h3>Common real-world examples</h3>
+  <p>A gallon of milk is 16 cups — perfect if a recipe calls for 2 cups and you want to know how many batches you can make (answer: 8). A quart of chicken broth is 4 cups, so a soup recipe calling for 3 cups uses ¾ of a standard carton.</p>
 
-  <h3>US vs metric tablespoons</h3>
-  <p>A US tablespoon is 14.8 ml. An Australian tablespoon is 20 ml and a UK tablespoon is 15 ml. For most recipes the difference is small enough to ignore, but for precise baking it's worth noting if your recipe comes from overseas.</p>
+  <h3>US vs. UK gallons</h3>
+  <p>These conversions apply to the <strong>US gallon</strong> (128 fl oz). The UK imperial gallon is larger (160 fl oz = 20 cups). Most recipes you'll find online use US measurements unless stated otherwise.</p>
 
+  <!-- BOTTOM AD UNIT -->
   <div class="ad-slot ad-bottom">Advertisement</div>
 
+  <!-- ── FAQ ── -->
   <h2>Frequently Asked Questions</h2>
   <div class="faq-item">
-    <p class="faq-q">How many teaspoons in a tablespoon of butter?</p>
-    <p class="faq-a">3 teaspoons. Butter follows the same conversion as any other ingredient — 1 tablespoon always equals 3 teaspoons regardless of what you're measuring.</p>
+    <p class="faq-q">How many cups in a gallon of water?</p>
+    <p class="faq-a">16 cups. Water, milk, juice — any liquid follows the same conversion. 1 US gallon = 16 cups regardless of what's in it.</p>
   </div>
   <div class="faq-item">
-    <p class="faq-q">What is half of 1 tablespoon?</p>
-    <p class="faq-a">Half of 1 tablespoon is 1½ teaspoons. Since 1 tablespoon = 3 teaspoons, half of that is 1.5 teaspoons.</p>
+    <p class="faq-q">How many 8 oz cups in a gallon?</p>
+    <p class="faq-a">16 cups. A standard US cup is 8 fluid ounces, so 16 × 8 = 128 fl oz = 1 gallon.</p>
   </div>
   <div class="faq-item">
-    <p class="faq-q">How many teaspoons in ¾ tablespoon?</p>
-    <p class="faq-a">2¼ teaspoons. Multiply ¾ by 3 to get 2.25 teaspoons.</p>
+    <p class="faq-q">How many cups in 2 gallons?</p>
+    <p class="faq-a">32 cups. Just multiply: 2 × 16 = 32.</p>
   </div>
   <div class="faq-item">
-    <p class="faq-q">How many tablespoons in ¼ cup?</p>
-    <p class="faq-a">4 tablespoons. There are 16 tablespoons in a full cup, so a quarter of that is 4 tablespoons.</p>
+    <p class="faq-q">How many cups in a gallon of ice cream?</p>
+    <p class="faq-a">16 cups by volume. A standard gallon tub of ice cream is 16 cups, though ice cream is often measured by the quart (4 cups) when sold in stores.</p>
   </div>
   <div class="faq-item">
-    <p class="faq-q">Is a teaspoon bigger than a tablespoon?</p>
-    <p class="faq-a">No — a tablespoon is bigger. One tablespoon holds 3 times as much as one teaspoon. The abbreviation for tablespoon is tbsp and for teaspoon is tsp.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">How many teaspoons in a tablespoon of sugar?</p>
-    <p class="faq-a">3 teaspoons. Sugar, salt, spices — any dry ingredient follows the same conversion. 1 tablespoon always equals 3 teaspoons.</p>
-  </div>
-
-  <div class="related-links">
-    <h3>More Kitchen Conversions</h3>
-    <a href="/cups-to-gallons.html">Cups to Gallons</a>
-    <a href="/ounces-in-a-cup.html">Ounces to Cups</a>
-    <a href="/teaspoons-in-a-tablespoon.html">Teaspoons to Tablespoons</a>
+    <p class="faq-q">How many 16 oz cups in a gallon?</p>
+    <p class="faq-a">8 cups. Since 16 oz = 2 standard cups, divide 16 (total cups per gallon) by 2 to get 8.</p>
   </div>
 
 </main>
@@ -524,10 +504,12 @@
 
 <script>
   const toOz = {
-    cup: 8, fluid_oz: 1, tablespoon: 0.5, teaspoon: 1/6
+    gallon: 128, quart: 32, pint: 16, cup: 8,
+    fluid_oz: 1, tablespoon: 0.5, teaspoon: 1/6
   };
   const labels = {
-    cup: 'cups', fluid_oz: 'fluid ounces', tablespoon: 'tablespoons', teaspoon: 'teaspoons'
+    gallon: 'gallons', quart: 'quarts', pint: 'pints', cup: 'cups',
+    fluid_oz: 'fluid ounces', tablespoon: 'tablespoons', teaspoon: 'teaspoons'
   };
 
   function convert() {
@@ -545,8 +527,9 @@
     const oz = amount * toOz[from];
     const result = oz / toOz[to];
     const rounded = parseFloat(result.toFixed(4));
+    const display = Number.isInteger(rounded) ? rounded : rounded;
 
-    box.innerHTML = `<strong>${amount} ${labels[from]}</strong> = <strong>${rounded} ${labels[to]}</strong>`;
+    box.innerHTML = `<strong>${amount} ${labels[from]}</strong> = <strong>${display} ${labels[to]}</strong>`;
     box.classList.add('visible');
   }
 
