@@ -81,7 +81,7 @@
       max-width: 900px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 8px;
     }
     .site-name {
@@ -92,7 +92,7 @@
       text-decoration: none;
       letter-spacing: -0.02em;
     }
-    nav { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    nav { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: center; }
     nav a { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; white-space: nowrap; background: var(--accent-light); padding: 5px 11px; border-radius: 20px; transition: background 0.15s; flex-shrink: 0; }
     nav a:hover { background: #f0cfc0; }
 
@@ -420,7 +420,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="header-inner">
     <a class="site-name" href="/">MeasureUpNow</a>
@@ -435,12 +434,10 @@
   </div>
 </header>
 
-<!-- TOP AD -->
 <div class="ad-bar">
   <div class="ad-slot ad-top">Advertisement</div>
 </div>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
     <span class="hero-label">Free Kitchen Tools</span>
@@ -450,41 +447,21 @@
   </div>
 </section>
 
-<!-- QUICK FACTS STRIP -->
 <div class="facts-strip">
-  <div class="fact-item">
-    <span class="fact-num">16</span>
-    <span class="fact-label">cups per gallon</span>
-  </div>
-  <div class="fact-item">
-    <span class="fact-num">8</span>
-    <span class="fact-label">oz per cup</span>
-  </div>
-  <div class="fact-item">
-    <span class="fact-num">3</span>
-    <span class="fact-label">tsp per tbsp</span>
-  </div>
-  <div class="fact-item">
-    <span class="fact-num">16</span>
-    <span class="fact-label">tbsp per cup</span>
-  </div>
-  <div class="fact-item">
-    <span class="fact-num">4</span>
-    <span class="fact-label">cups per quart</span>
-  </div>
+  <div class="fact-item"><span class="fact-num">16</span><span class="fact-label">cups per gallon</span></div>
+  <div class="fact-item"><span class="fact-num">8</span><span class="fact-label">oz per cup</span></div>
+  <div class="fact-item"><span class="fact-num">3</span><span class="fact-label">tsp per tbsp</span></div>
+  <div class="fact-item"><span class="fact-num">16</span><span class="fact-label">tbsp per cup</span></div>
+  <div class="fact-item"><span class="fact-num">4</span><span class="fact-label">cups per quart</span></div>
 </div>
 
-<!-- MAIN -->
 <main>
-
-  <!-- CONVERTER CARDS -->
   <div class="section-header" id="converters">
     <h2>Kitchen Converters</h2>
     <p>Pick the conversion you need — each tool has a full chart, calculator, and FAQ.</p>
   </div>
 
   <div class="cards-grid">
-
     <a href="/cups-to-gallons.html" class="conv-card">
       <span class="card-icon">🥛</span>
       <div class="card-title">Cups to Gallons</div>
@@ -492,7 +469,6 @@
       <p class="card-desc">Convert between cups, gallons, quarts and pints. Includes a full conversion table and calculator.</p>
       <span class="card-link">Open converter</span>
     </a>
-
     <a href="/ounces-in-a-cup.html" class="conv-card">
       <span class="card-icon">⚖️</span>
       <div class="card-title">Ounces to Cups</div>
@@ -500,7 +476,6 @@
       <p class="card-desc">Convert fluid ounces to cups and back. Includes the difference between fluid and weight ounces explained.</p>
       <span class="card-link">Open converter</span>
     </a>
-
     <a href="/teaspoons-in-a-tablespoon.html" class="conv-card">
       <span class="card-icon">🥄</span>
       <div class="card-title">Teaspoons to Tablespoons</div>
@@ -508,7 +483,6 @@
       <p class="card-desc">Convert teaspoons and tablespoons instantly. Perfect for halving or doubling recipes.</p>
       <span class="card-link">Open converter</span>
     </a>
-
     <a href="/tablespoons-in-a-cup.html" class="conv-card">
       <span class="card-icon">🥄</span>
       <div class="card-title">Tablespoons to Cups</div>
@@ -516,7 +490,6 @@
       <p class="card-desc">Convert tablespoons to cups and back. Perfect for scaling recipes up or down without a measuring cup.</p>
       <span class="card-link">Open converter</span>
     </a>
-
     <a href="/ml-in-a-cup.html" class="conv-card">
       <span class="card-icon">🧪</span>
       <div class="card-title">Milliliters to Cups</div>
@@ -524,7 +497,6 @@
       <p class="card-desc">Convert between metric and US measurements. Essential for international recipes and food labels.</p>
       <span class="card-link">Open converter</span>
     </a>
-
     <a href="/grams-in-a-cup.html" class="conv-card">
       <span class="card-icon">🧈</span>
       <div class="card-title">Grams to Cups</div>
@@ -532,10 +504,8 @@
       <p class="card-desc">Convert grams to cups for flour, sugar, butter, rice and more. Includes a full ingredient chart and calculator.</p>
       <span class="card-link">Open converter</span>
     </a>
-
   </div>
 
-  <!-- QUICK REFERENCE TABLE -->
   <div class="quick-ref">
     <h2>⚡ Quick Reference Cheat Sheet</h2>
     <div class="ref-grid">
@@ -554,56 +524,28 @@
     </div>
   </div>
 
-  <!-- WHY SECTION -->
   <div class="why-section">
     <div class="section-header">
       <h2>Why MeasureUpNow?</h2>
       <p>We built the kitchen measurement tools we always wished existed.</p>
     </div>
     <div class="why-grid">
-      <div class="why-item">
-        <span class="why-icon">⚡</span>
-        <div class="why-title">Instant Answers</div>
-        <p class="why-desc">The answer is right at the top — no scrolling through recipes to find it.</p>
-      </div>
-      <div class="why-item">
-        <span class="why-icon">🎯</span>
-        <div class="why-title">Always Accurate</div>
-        <p class="why-desc">US standard measurements you can trust every time you cook or bake.</p>
-      </div>
-      <div class="why-item">
-        <span class="why-icon">📱</span>
-        <div class="why-title">Works Everywhere</div>
-        <p class="why-desc">Fast and clean on any device — phone, tablet or desktop.</p>
-      </div>
-      <div class="why-item">
-        <span class="why-icon">🆓</span>
-        <div class="why-title">100% Free</div>
-        <p class="why-desc">No sign up, no subscription, no nonsense. Just the answer you need.</p>
-      </div>
+      <div class="why-item"><span class="why-icon">⚡</span><div class="why-title">Instant Answers</div><p class="why-desc">The answer is right at the top — no scrolling through recipes to find it.</p></div>
+      <div class="why-item"><span class="why-icon">🎯</span><div class="why-title">Always Accurate</div><p class="why-desc">US standard measurements you can trust every time you cook or bake.</p></div>
+      <div class="why-item"><span class="why-icon">📱</span><div class="why-title">Works Everywhere</div><p class="why-desc">Fast and clean on any device — phone, tablet or desktop.</p></div>
+      <div class="why-item"><span class="why-icon">🆓</span><div class="why-title">100% Free</div><p class="why-desc">No sign up, no subscription, no nonsense. Just the answer you need.</p></div>
     </div>
   </div>
 
-  <!-- BOTTOM AD -->
   <div style="display:flex; justify-content:center; margin: 2rem 0;">
     <div class="ad-slot ad-bottom">Advertisement</div>
   </div>
 
 </main>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 MeasureUpNow.com · Free Kitchen Measurement Tools</p>
-  <nav>
-    <a href="/cups-to-gallons.html">Cups to Gallons</a>
-    <a href="/ounces-in-a-cup.html">Ounces to Cups</a>
-    <a href="/teaspoons-in-a-tablespoon.html">Teaspoons to Tablespoons</a>
-    <a href="/tablespoons-in-a-cup.html">Tablespoons to Cups</a>
-    <a href="/ml-in-a-cup.html">ml to Cups</a>
-    <a href="/grams-in-a-cup.html">Grams to Cups</a>
-  </nav>
 </footer>
 
 </body>
 </html>
-
