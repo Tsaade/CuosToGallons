@@ -3,21 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kitchen Measurement Converter | MeasureUpNow.com</title>
-  <meta name="description" content="Free kitchen measurement converters. Instantly convert cups, gallons, ounces, teaspoons, tablespoons and more. Your #1 kitchen measurement resource." />
+  <title>How Many Cups in a Gallon? Full Conversion Chart & Calculator</title>
+  <meta name="description" content="How many cups in a gallon? The answer is 16 cups. Use our free calculator and full conversion chart for gallons, quarts, pints, and cups." />
 
+  <!-- SEO: Tell Google this page is the authoritative answer -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "MeasureUpNow",
-    "url": "https://www.measureupnow.com",
-    "description": "Free kitchen measurement converters for cups, gallons, ounces, teaspoons and tablespoons.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.measureupnow.com/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many cups in a gallon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are 16 cups in a gallon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many cups in a half gallon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are 8 cups in a half gallon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many cups in a quart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are 4 cups in a quart."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many cups in a pint?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are 2 cups in a pint."
+        }
+      }
+    ]
   }
   </script>
 
@@ -29,17 +56,14 @@
 
     :root {
       --cream: #FBF7F2;
-      --cream-dark: #F4EDE3;
       --ink: #1C1208;
       --ink-muted: #7D6E5E;
       --accent: #C17A5A;
       --accent-light: #FAF0E8;
-      --accent-dark: #8B4A2F;
       --border: #EBE2D6;
-      --white: #FFFDF9;
+      --green: #2D6A4F;
+      --green-light: #EAF4EE;
     }
-
-    html { scroll-behavior: smooth; }
 
     body {
       font-family: 'DM Sans', sans-serif;
@@ -49,7 +73,7 @@
       font-size: 16px;
     }
 
-    /* ── AD SLOTS ── */
+    /* ── AD PLACEHOLDER STYLES ── */
     .ad-slot {
       background: #f0f0f0;
       border: 1px dashed #bbb;
@@ -62,23 +86,20 @@
       text-transform: uppercase;
       margin: 0 auto;
     }
-    .ad-top { width: 100%; max-width: 728px; height: 90px; }
-    .ad-bottom { width: 100%; max-width: 728px; height: 90px; }
+    .ad-top { width: 100%; max-width: 728px; height: 90px; margin-bottom: 2rem; }
+    .ad-mid { width: 100%; max-width: 728px; height: 90px; margin: 2.5rem auto; display: block; }
+    .ad-bottom { width: 100%; max-width: 336px; height: 280px; margin: 2rem auto; display: block; }
 
-    /* ── HEADER ── */
+    /* ── LAYOUT ── */
     header {
       border-bottom: 1px solid var(--border);
       padding: 1rem 1.5rem;
       display: flex;
       justify-content: center;
-      background: var(--white);
-      position: sticky;
-      top: 0;
-      z-index: 100;
     }
     .header-inner {
       width: 100%;
-      max-width: 900px;
+      max-width: 760px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -99,304 +120,194 @@
       transition: color 0.15s;
       font-weight: 500;
     }
-    nav a:hover { color: var(--accent); }
+    nav a:hover { background: #f0cfc0; }
 
-    /* ── TOP AD ── */
-    .ad-bar {
-      display: flex;
-      justify-content: center;
-      padding: 1rem 1.5rem;
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-    }
-
-    /* ── HERO ── */
-    .hero {
-      background: #1C1208;
-      color: var(--white);
-      padding: 5rem 1.5rem 4rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -20%;
-      width: 60%;
-      height: 200%;
-      background: radial-gradient(ellipse, rgba(200, 75, 47, 0.15) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -30%;
-      right: -10%;
-      width: 50%;
-      height: 150%;
-      background: radial-gradient(ellipse, rgba(200, 75, 47, 0.1) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-inner {
-      position: relative;
-      z-index: 1;
-      max-width: 700px;
+    main {
+      max-width: 760px;
       margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
     }
-    .hero-label {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--white);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 5px 14px;
-      border-radius: 20px;
-      margin-bottom: 1.5rem;
+
+    /* ── HERO ANSWER ── */
+    .hero {
+      text-align: center;
+      padding: 2.5rem 0 2rem;
     }
     .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.2rem, 6vw, 3.8rem);
-      font-weight: 900;
-      line-height: 1.1;
+      font-family: 'Lora', serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.25;
       margin-bottom: 1.25rem;
-      letter-spacing: -0.02em;
+      color: var(--ink);
     }
-    .hero h1 span { color: var(--accent); }
-    .hero-sub {
-      font-size: 17px;
-      color: rgba(255,255,255,0.7);
-      max-width: 500px;
-      margin: 0 auto 2rem;
-      font-weight: 300;
-    }
-    .hero-cta {
+    .answer-box {
       display: inline-block;
       background: var(--accent);
-      color: var(--white);
-      text-decoration: none;
-      padding: 14px 32px;
-      border-radius: 8px;
-      font-size: 15px;
-      font-weight: 500;
-      transition: background 0.15s, transform 0.15s;
+      color: #fff;
+      border-radius: 12px;
+      padding: 1.25rem 2.5rem;
+      margin-bottom: 1rem;
     }
-    .hero-cta:hover {
-      background: var(--accent-dark);
-      transform: translateY(-1px);
+    .answer-box .number {
+      font-family: 'Lora', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1;
+      display: block;
+    }
+    .answer-box .label {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-top: 4px;
+      display: block;
+    }
+    .hero-sub {
+      color: var(--ink-muted);
+      font-size: 15px;
+      max-width: 480px;
+      margin: 0.75rem auto 0;
     }
 
-    /* ── QUICK FACTS STRIP ── */
-    .facts-strip {
-      background: #8B4A2F;
-      color: var(--white);
-      display: flex;
-      justify-content: center;
-      gap: 0;
-      overflow-x: auto;
+    /* ── QUICK ANSWERS ── */
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 2rem 0;
     }
-    .fact-item {
-      padding: 0.9rem 2rem;
+    .quick-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
       text-align: center;
-      border-right: 1px solid rgba(255,255,255,0.2);
-      white-space: nowrap;
-      flex-shrink: 0;
     }
-    .fact-item:last-child { border-right: none; }
-    .fact-num {
+    .quick-card .q-num {
+      font-family: 'Lora', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      display: block;
+    }
+    .quick-card .q-label {
+      font-size: 13px;
+      color: var(--ink-muted);
+      margin-top: 2px;
+    }
+
+    /* ── SECTION HEADINGS ── */
+    h2 {
       font-family: 'Playfair Display', serif;
       font-size: 1.4rem;
       font-weight: 700;
-      display: block;
-      line-height: 1;
-    }
-    .fact-label {
-      font-size: 11px;
-      opacity: 0.8;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-top: 3px;
-      display: block;
-    }
-
-    /* ── MAIN CONTENT ── */
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem 4rem;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-    .section-header h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 700;
+      margin: 2.5rem 0 1rem;
       color: var(--ink);
-      margin-bottom: 0.5rem;
     }
-    .section-header p {
-      color: var(--ink-muted);
-      font-size: 15px;
-      max-width: 500px;
-      margin: 0 auto;
+    h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 1.5rem 0 0.5rem;
+      color: var(--ink);
     }
+    p { margin-bottom: 1rem; color: var(--ink-muted); }
 
-    /* ── CONVERTER CARDS ── */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.25rem;
-      margin-bottom: 3rem;
+    /* ── CONVERSION TABLE ── */
+    .table-wrap { overflow-x: auto; margin: 1rem 0 2rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
     }
-    .conv-card {
-      background: var(--white);
+    thead tr { background: var(--ink); color: #fff; }
+    thead th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.03em;
+    }
+    tbody tr:nth-child(even) { background: #fff; }
+    tbody tr:nth-child(odd) { background: var(--cream); }
+    tbody tr:hover { background: var(--accent-light); }
+    tbody td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+    tbody td:first-child { font-weight: 500; color: var(--ink); }
+    .highlight-row td { background: var(--accent-light) !important; color: var(--accent); font-weight: 600; }
+
+    /* ── CALCULATOR ── */
+    .calc-box {
+      background: #fff;
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 14px;
       padding: 1.75rem;
-      text-decoration: none;
-      color: inherit;
-      transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
-      display: block;
-      position: relative;
-      overflow: hidden;
+      margin: 1.5rem 0;
     }
-    .conv-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--accent);
-      transform: scaleX(0);
-      transition: transform 0.2s;
-      transform-origin: left;
-    }
-    .conv-card:hover {
-      transform: translateY(-3px);
-      border-color: var(--accent);
-      box-shadow: 0 8px 24px rgba(200, 75, 47, 0.1);
-    }
-    .conv-card:hover::before { transform: scaleX(1); }
-    .card-icon {
-      font-size: 2rem;
-      margin-bottom: 0.75rem;
-      display: block;
-    }
-    .card-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--ink);
-      margin-bottom: 0.4rem;
-    }
-    .card-answer {
-      display: inline-block;
-      background: var(--accent-light);
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 500;
-      padding: 3px 10px;
-      border-radius: 20px;
-      margin-bottom: 0.75rem;
-    }
-    .card-desc {
-      font-size: 13px;
-      color: var(--ink-muted);
-      line-height: 1.5;
-      margin: 0;
-    }
-    .card-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 13px;
-      color: var(--accent);
-      font-weight: 500;
-      margin-top: 1rem;
-    }
-    .card-link::after { content: '→'; }
-
-    /* ── COMING SOON CARD ── */
-    .conv-card.coming-soon {
-      opacity: 0.6;
-      cursor: default;
-      pointer-events: none;
-    }
-    .coming-badge {
-      display: inline-block;
-      background: var(--cream-dark);
-      color: var(--ink-muted);
-      font-size: 11px;
-      padding: 3px 10px;
-      border-radius: 20px;
-      margin-bottom: 0.75rem;
-    }
-
-    /* ── QUICK REFERENCE TABLE ── */
-    .quick-ref {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 2rem;
-      margin: 2rem 0;
-    }
-    .quick-ref h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 1.25rem;
-      color: var(--ink);
-    }
-    .ref-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
-    }
-    .ref-item {
-      background: var(--cream);
-      border-radius: 8px;
-      padding: 0.75rem 1rem;
-      font-size: 14px;
+    .calc-box h2 { margin-top: 0; }
+    .calc-row {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      gap: 12px;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
     }
-    .ref-item .ref-q { color: var(--ink-muted); }
-    .ref-item .ref-a { font-weight: 500; color: var(--accent); }
-
-    /* ── WHY SECTION ── */
-    .why-section {
-      text-align: center;
-      padding: 2rem 0;
-      margin: 1rem 0;
-    }
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .why-item {
-      padding: 1.5rem;
-      background: var(--white);
-      border-radius: 12px;
+    .calc-group { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 120px; }
+    .calc-group label { font-size: 13px; color: var(--ink-muted); }
+    .calc-group input, .calc-group select {
       border: 1px solid var(--border);
-    }
-    .why-icon { font-size: 1.75rem; margin-bottom: 0.5rem; display: block; }
-    .why-title {
-      font-weight: 500;
-      font-size: 15px;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 16px;
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
       color: var(--ink);
-      margin-bottom: 0.25rem;
+      outline: none;
+      transition: border-color 0.15s;
     }
-    .why-desc { font-size: 13px; color: var(--ink-muted); }
+    .calc-group input:focus, .calc-group select:focus { border-color: var(--accent); }
+    .calc-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 24px;
+      font-size: 15px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      white-space: nowrap;
+    }
+    .calc-btn:hover { opacity: 0.88; }
+    .calc-result {
+      background: var(--green-light);
+      border: 1px solid #b7dfc8;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      font-size: 1.05rem;
+      color: var(--green);
+      font-weight: 500;
+      display: none;
+    }
+    .calc-result.visible { display: block; }
+
+    /* ── TIP BOX ── */
+    .tip {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      font-size: 14px;
+      color: var(--ink-muted);
+    }
+    .tip strong { color: var(--accent); }
+
+    /* ── FAQ ── */
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-weight: 500; color: var(--ink); margin-bottom: 0.4rem; font-size: 15px; }
+    .faq-a { font-size: 14px; color: var(--ink-muted); margin: 0; }
 
     /* ── FOOTER ── */
     footer {
@@ -405,27 +316,16 @@
       padding: 2rem 1.5rem;
       font-size: 13px;
       color: var(--ink-muted);
-      background: var(--white);
     }
-    footer nav { margin-top: 0.75rem; }
-    footer nav a {
-      color: var(--ink-muted);
-      text-decoration: none;
-      margin: 0 0.75rem;
-      font-size: 13px;
-      transition: color 0.15s;
-    }
-    footer nav a:hover { color: var(--accent); }
 
-    @media (max-width: 600px) {
-      nav { display: none; }
-      .facts-strip { justify-content: flex-start; }
+    @media (max-width: 520px) {
+      .calc-row { flex-direction: column; }
+      .calc-btn { width: 100%; }
     }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="header-inner">
     <a class="site-name" href="/">MeasureUpNow</a>
@@ -433,172 +333,215 @@
       <a href="/cups-to-gallons.html">Cups → Gallons</a>
       <a href="/ounces-in-a-cup.html">Ounces → Cups</a>
       <a href="/teaspoons-in-a-tablespoon.html">Tsp → Tbsp</a>
+      <a href="/tablespoons-in-a-cup.html">Tbsp → Cups</a>
+      <a href="/ml-in-a-cup.html">ml → Cups</a>
+      <a href="/grams-in-a-cup.html">Grams → Cups</a>
     </nav>
   </div>
 </header>
 
-<!-- TOP AD -->
-<div class="ad-bar">
+<!-- TOP AD UNIT — replace with your Google AdSense code -->
+<div style="display:flex; justify-content:center; padding: 1rem 1.5rem 0;">
   <div class="ad-slot ad-top">Advertisement</div>
 </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <span class="hero-label">Free Kitchen Tools</span>
-    <h1>Your Kitchen<br><span>Measurement</span> Hub</h1>
-    <p class="hero-sub">Instant, accurate conversions for every kitchen measurement — no guessing, no math headaches.</p>
-    <a href="#converters" class="hero-cta">Browse Converters ↓</a>
-  </div>
-</section>
-
-<!-- QUICK FACTS STRIP -->
-<div class="facts-strip">
-  <div class="fact-item">
-    <span class="fact-num">16</span>
-    <span class="fact-label">cups per gallon</span>
-  </div>
-  <div class="fact-item">
-    <span class="fact-num">8</span>
-    <span class="fact-label">oz per cup</span>
-  </div>
-  <div class="fact-item">
-    <span class="fact-num">3</span>
-    <span class="fact-label">tsp per tbsp</span>
-  </div>
-  <div class="fact-item">
-    <span class="fact-num">16</span>
-    <span class="fact-label">tbsp per cup</span>
-  </div>
-  <div class="fact-item">
-    <span class="fact-num">4</span>
-    <span class="fact-label">cups per quart</span>
-  </div>
-</div>
-
-<!-- MAIN -->
 <main>
 
-  <!-- CONVERTER CARDS -->
-  <div class="section-header" id="converters">
-    <h2>Kitchen Converters</h2>
-    <p>Pick the conversion you need — each tool has a full chart, calculator, and FAQ.</p>
-  </div>
-
-  <div class="cards-grid">
-
-    <a href="/cups-to-gallons.html" class="conv-card">
-      <span class="card-icon">🥛</span>
-      <div class="card-title">Cups to Gallons</div>
-      <span class="card-answer">1 gallon = 16 cups</span>
-      <p class="card-desc">Convert between cups, gallons, quarts and pints. Includes a full conversion table and calculator.</p>
-      <span class="card-link">Open converter</span>
-    </a>
-
-    <a href="/ounces-in-a-cup.html" class="conv-card">
-      <span class="card-icon">⚖️</span>
-      <div class="card-title">Ounces to Cups</div>
-      <span class="card-answer">1 cup = 8 fl oz</span>
-      <p class="card-desc">Convert fluid ounces to cups and back. Includes the difference between fluid and weight ounces explained.</p>
-      <span class="card-link">Open converter</span>
-    </a>
-
-    <a href="/teaspoons-in-a-tablespoon.html" class="conv-card">
-      <span class="card-icon">🥄</span>
-      <div class="card-title">Teaspoons to Tablespoons</div>
-      <span class="card-answer">1 tbsp = 3 tsp</span>
-      <p class="card-desc">Convert teaspoons and tablespoons instantly. Perfect for halving or doubling recipes.</p>
-      <span class="card-link">Open converter</span>
-    </a>
-
-    <div class="conv-card coming-soon">
-      <span class="card-icon">🌡️</span>
-      <div class="card-title">Tablespoons to Cups</div>
-      <span class="coming-badge">Coming Soon</span>
-      <p class="card-desc">Convert tablespoons to cups and back. Great for scaling recipes up or down.</p>
+  <!-- ── HERO: The answer, front and center ── -->
+  <section class="hero">
+    <h1>How Many Cups in a Gallon?</h1>
+    <div class="answer-box">
+      <span class="number">16</span>
+      <span class="label">cups in 1 gallon</span>
     </div>
+    <p class="hero-sub">There are exactly <strong>16 cups</strong> in a US gallon. Use the chart and calculator below for any amount.</p>
+  </section>
 
-    <div class="conv-card coming-soon">
-      <span class="card-icon">🧪</span>
-      <div class="card-title">Milliliters to Cups</div>
-      <span class="coming-badge">Coming Soon</span>
-      <p class="card-desc">Convert between metric and US measurements. Essential for international recipes.</p>
+  <!-- ── QUICK ANSWER CARDS ── -->
+  <div class="quick-grid">
+    <div class="quick-card">
+      <span class="q-num">16</span>
+      <span class="q-label">cups in a gallon</span>
     </div>
-
-    <div class="conv-card coming-soon">
-      <span class="card-icon">🧈</span>
-      <div class="card-title">Grams to Cups</div>
-      <span class="coming-badge">Coming Soon</span>
-      <p class="card-desc">Convert grams to cups for flour, sugar, butter and more common ingredients.</p>
+    <div class="quick-card">
+      <span class="q-num">8</span>
+      <span class="q-label">cups in a half gallon</span>
     </div>
-
-  </div>
-
-  <!-- QUICK REFERENCE TABLE -->
-  <div class="quick-ref">
-    <h2>⚡ Quick Reference Cheat Sheet</h2>
-    <div class="ref-grid">
-      <div class="ref-item"><span class="ref-q">1 gallon =</span><span class="ref-a">16 cups</span></div>
-      <div class="ref-item"><span class="ref-q">1 gallon =</span><span class="ref-a">4 quarts</span></div>
-      <div class="ref-item"><span class="ref-q">1 quart =</span><span class="ref-a">4 cups</span></div>
-      <div class="ref-item"><span class="ref-q">1 pint =</span><span class="ref-a">2 cups</span></div>
-      <div class="ref-item"><span class="ref-q">1 cup =</span><span class="ref-a">8 fl oz</span></div>
-      <div class="ref-item"><span class="ref-q">1 cup =</span><span class="ref-a">16 tbsp</span></div>
-      <div class="ref-item"><span class="ref-q">1 cup =</span><span class="ref-a">48 tsp</span></div>
-      <div class="ref-item"><span class="ref-q">1 tbsp =</span><span class="ref-a">3 tsp</span></div>
-      <div class="ref-item"><span class="ref-q">1 tbsp =</span><span class="ref-a">½ fl oz</span></div>
-      <div class="ref-item"><span class="ref-q">½ cup =</span><span class="ref-a">8 tbsp</span></div>
-      <div class="ref-item"><span class="ref-q">¼ cup =</span><span class="ref-a">4 tbsp</span></div>
-      <div class="ref-item"><span class="ref-q">1 fl oz =</span><span class="ref-a">2 tbsp</span></div>
+    <div class="quick-card">
+      <span class="q-num">4</span>
+      <span class="q-label">cups in a quart</span>
+    </div>
+    <div class="quick-card">
+      <span class="q-num">2</span>
+      <span class="q-label">cups in a pint</span>
     </div>
   </div>
 
-  <!-- WHY SECTION -->
-  <div class="why-section">
-    <div class="section-header">
-      <h2>Why MeasureUpNow?</h2>
-      <p>We built the kitchen measurement tools we always wished existed.</p>
+  <!-- ── CALCULATOR ── -->
+  <div class="calc-box">
+    <h2>Cups Converter</h2>
+    <p style="margin-bottom:1.25rem; font-size:14px;">Enter any amount and convert instantly.</p>
+    <div class="calc-row">
+      <div class="calc-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" value="1" min="0" step="any" />
+      </div>
+      <div class="calc-group">
+        <label for="from-unit">From</label>
+        <select id="from-unit">
+          <option value="gallon">Gallons</option>
+          <option value="quart">Quarts</option>
+          <option value="pint">Pints</option>
+          <option value="cup" selected>Cups</option>
+          <option value="fluid_oz">Fluid Ounces</option>
+          <option value="tablespoon">Tablespoons</option>
+          <option value="teaspoon">Teaspoons</option>
+        </select>
+      </div>
+      <div class="calc-group">
+        <label for="to-unit">To</label>
+        <select id="to-unit">
+          <option value="gallon" selected>Gallons</option>
+          <option value="quart">Quarts</option>
+          <option value="pint">Pints</option>
+          <option value="cup">Cups</option>
+          <option value="fluid_oz">Fluid Ounces</option>
+          <option value="tablespoon">Tablespoons</option>
+          <option value="teaspoon">Teaspoons</option>
+        </select>
+      </div>
+      <button class="calc-btn" onclick="convert()">Convert</button>
     </div>
-    <div class="why-grid">
-      <div class="why-item">
-        <span class="why-icon">⚡</span>
-        <div class="why-title">Instant Answers</div>
-        <p class="why-desc">The answer is right at the top — no scrolling through recipes to find it.</p>
-      </div>
-      <div class="why-item">
-        <span class="why-icon">🎯</span>
-        <div class="why-title">Always Accurate</div>
-        <p class="why-desc">US standard measurements you can trust every time you cook or bake.</p>
-      </div>
-      <div class="why-item">
-        <span class="why-icon">📱</span>
-        <div class="why-title">Works Everywhere</div>
-        <p class="why-desc">Fast and clean on any device — phone, tablet or desktop.</p>
-      </div>
-      <div class="why-item">
-        <span class="why-icon">🆓</span>
-        <div class="why-title">100% Free</div>
-        <p class="why-desc">No sign up, no subscription, no nonsense. Just the answer you need.</p>
-      </div>
-    </div>
+    <div class="calc-result" id="result-box"></div>
   </div>
 
-  <!-- BOTTOM AD -->
-  <div style="display:flex; justify-content:center; margin: 2rem 0;">
-    <div class="ad-slot ad-bottom">Advertisement</div>
+  <!-- MID AD UNIT -->
+  <div class="ad-slot ad-mid">Advertisement</div>
+
+  <!-- ── FULL CONVERSION TABLE ── -->
+  <h2>Full Conversion Chart</h2>
+  <p>This table shows how gallons, quarts, pints, cups, fluid ounces, tablespoons, and teaspoons all relate to each other — the entire US liquid measurement system in one place.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Measurement</th>
+          <th>Gallons</th>
+          <th>Quarts</th>
+          <th>Pints</th>
+          <th>Cups</th>
+          <th>Fl. Oz</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td>1 Gallon</td><td>1</td><td>4</td><td>8</td><td>16</td><td>128</td>
+        </tr>
+        <tr>
+          <td>½ Gallon</td><td>0.5</td><td>2</td><td>4</td><td>8</td><td>64</td>
+        </tr>
+        <tr>
+          <td>¼ Gallon</td><td>0.25</td><td>1</td><td>2</td><td>4</td><td>32</td>
+        </tr>
+        <tr>
+          <td>1 Quart</td><td>¼</td><td>1</td><td>2</td><td>4</td><td>32</td>
+        </tr>
+        <tr>
+          <td>1 Pint</td><td>⅛</td><td>½</td><td>1</td><td>2</td><td>16</td>
+        </tr>
+        <tr>
+          <td>1 Cup</td><td>1/16</td><td>¼</td><td>½</td><td>1</td><td>8</td>
+        </tr>
+        <tr>
+          <td>1 Fl. Oz</td><td>1/128</td><td>1/32</td><td>1/16</td><td>⅛</td><td>1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip">
+    <strong>Easy way to remember:</strong> A gallon holds 4 quarts → each quart holds 2 pints → each pint holds 2 cups. So: 4 × 2 × 2 = 16 cups per gallon.
+  </div>
+
+  <!-- ── EXPLAINER ── -->
+  <h2>Why This Matters in the Kitchen</h2>
+  <p>Most US recipes use cups, but many ingredients — especially liquids like milk, broth, or juice — are sold by the quart or gallon. Knowing these conversions helps you scale recipes up or down without guessing.</p>
+
+  <h3>Common real-world examples</h3>
+  <p>A gallon of milk is 16 cups — perfect if a recipe calls for 2 cups and you want to know how many batches you can make (answer: 8). A quart of chicken broth is 4 cups, so a soup recipe calling for 3 cups uses ¾ of a standard carton.</p>
+
+  <h3>US vs. UK gallons</h3>
+  <p>These conversions apply to the <strong>US gallon</strong> (128 fl oz). The UK imperial gallon is larger (160 fl oz = 20 cups). Most recipes you'll find online use US measurements unless stated otherwise.</p>
+
+  <!-- BOTTOM AD UNIT -->
+  <div class="ad-slot ad-bottom">Advertisement</div>
+
+  <!-- ── FAQ ── -->
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <p class="faq-q">How many cups in a gallon of water?</p>
+    <p class="faq-a">16 cups. Water, milk, juice — any liquid follows the same conversion. 1 US gallon = 16 cups regardless of what's in it.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">How many 8 oz cups in a gallon?</p>
+    <p class="faq-a">16 cups. A standard US cup is 8 fluid ounces, so 16 × 8 = 128 fl oz = 1 gallon.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">How many cups in 2 gallons?</p>
+    <p class="faq-a">32 cups. Just multiply: 2 × 16 = 32.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">How many cups in a gallon of ice cream?</p>
+    <p class="faq-a">16 cups by volume. A standard gallon tub of ice cream is 16 cups, though ice cream is often measured by the quart (4 cups) when sold in stores.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">How many 16 oz cups in a gallon?</p>
+    <p class="faq-a">8 cups. Since 16 oz = 2 standard cups, divide 16 (total cups per gallon) by 2 to get 8.</p>
   </div>
 
 </main>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 MeasureUpNow.com · Free Kitchen Measurement Tools</p>
-  <nav>
-    <a href="/cups-to-gallons.html">Cups to Gallons</a>
-    <a href="/ounces-in-a-cup.html">Ounces to Cups</a>
-    <a href="/teaspoons-in-a-tablespoon.html">Teaspoons to Tablespoons</a>
-  </nav>
+  <p>© 2026 MeasureUpNow.com · Free kitchen measurement tools</p>
+  <p style="margin-top:6px;">Last updated: 2026 · All conversions use US standard measurements</p>
 </footer>
+
+<script>
+  const toOz = {
+    gallon: 128, quart: 32, pint: 16, cup: 8,
+    fluid_oz: 1, tablespoon: 0.5, teaspoon: 1/6
+  };
+  const labels = {
+    gallon: 'gallons', quart: 'quarts', pint: 'pints', cup: 'cups',
+    fluid_oz: 'fluid ounces', tablespoon: 'tablespoons', teaspoon: 'teaspoons'
+  };
+
+  function convert() {
+    const amount = parseFloat(document.getElementById('amount').value);
+    const from = document.getElementById('from-unit').value;
+    const to = document.getElementById('to-unit').value;
+    const box = document.getElementById('result-box');
+
+    if (isNaN(amount) || amount < 0) {
+      box.textContent = 'Please enter a valid number.';
+      box.classList.add('visible');
+      return;
+    }
+
+    const oz = amount * toOz[from];
+    const result = oz / toOz[to];
+    const rounded = parseFloat(result.toFixed(4));
+    const display = Number.isInteger(rounded) ? rounded : rounded;
+
+    box.innerHTML = `<strong>${amount} ${labels[from]}</strong> = <strong>${display} ${labels[to]}</strong>`;
+    box.classList.add('visible');
+  }
+
+  document.getElementById('amount').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') convert();
+  });
+</script>
 
 </body>
 </html>

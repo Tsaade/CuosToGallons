@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grams to Cups Converter | Flour, Sugar, Butter & More</title>
+  <meta name="description" content="Convert grams to cups for flour, sugar, butter, rice and more. Free calculator and conversion chart for the most common cooking ingredients." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many grams in a cup of flour?",
+        "acceptedAnswer": { "@type": "Answer", "text": "There are approximately 120 grams in a cup of all-purpose flour." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many grams in a cup of sugar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "There are approximately 200 grams in a cup of white granulated sugar." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many grams in a cup of butter?",
+        "acceptedAnswer": { "@type": "Answer", "text": "There are approximately 227 grams in a cup of butter." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many grams in a cup of rice?",
+        "acceptedAnswer": { "@type": "Answer", "text": "There are approximately 185 grams in a cup of uncooked white rice." }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #FBF7F2; --cream-dark: #F4EDE3; --ink: #1C1208; --ink-muted: #7D6E5E;
+      --accent: #C17A5A; --accent-light: #FAF0E8; --accent-dark: #8B4A2F;
+      --border: #EBE2D6; --white: #FFFDF9; --green: #2D6A4F; --green-light: #EAF4EE;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; font-size: 16px; }
+    .ad-slot { background: #f0f0f0; border: 1px dashed #bbb; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #999; letter-spacing: 0.05em; text-transform: uppercase; margin: 0 auto; }
+    .ad-top { width: 100%; max-width: 728px; height: 90px; margin-bottom: 2rem; }
+    .ad-mid { width: 100%; max-width: 728px; height: 90px; margin: 2.5rem auto; display: block; }
+    .ad-bottom { width: 100%; max-width: 336px; height: 280px; margin: 2rem auto; display: block; }
+    header { border-bottom: 1px solid var(--border); padding: 0.75rem 1.5rem; display: flex; justify-content: center; background: var(--white); position: sticky; top: 0; z-index: 100; }
+    .header-inner { width: 100%; max-width: 760px; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+    .site-name { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--accent); text-decoration: none; letter-spacing: -0.02em; }
+    nav { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; } nav a { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; white-space: nowrap; background: var(--accent-light); padding: 5px 11px; border-radius: 20px; transition: background 0.15s; flex-shrink: 0; }
+    nav a:hover { background: #f0cfc0; }
+    main { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .hero { text-align: center; padding: 2.5rem 0 2rem; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 700; line-height: 1.25; margin-bottom: 1.25rem; color: var(--ink); }
+    .hero-sub { color: var(--ink-muted); font-size: 15px; max-width: 520px; margin: 0.75rem auto 0; }
+    .ingredient-note { display: inline-block; background: var(--accent-light); color: var(--accent); font-size: 13px; padding: 6px 14px; border-radius: 20px; margin-bottom: 1rem; font-weight: 500; }
+    .quick-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 2rem 0; }
+    .quick-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; text-align: center; }
+    .quick-card .q-num { font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: var(--accent); display: block; }
+    .quick-card .q-label { font-size: 12px; color: var(--ink-muted); margin-top: 2px; }
+    h2 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; margin: 2.5rem 0 1rem; color: var(--ink); }
+    h3 { font-size: 1rem; font-weight: 500; margin: 1.5rem 0 0.5rem; color: var(--ink); }
+    p { margin-bottom: 1rem; color: var(--ink-muted); }
+    .table-wrap { overflow-x: auto; margin: 1rem 0 2rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    thead tr { background: var(--ink); color: #fff; }
+    thead th { padding: 10px 14px; text-align: left; font-weight: 500; font-size: 13px; }
+    tbody tr:nth-child(even) { background: var(--white); }
+    tbody tr:nth-child(odd) { background: var(--cream); }
+    tbody tr:hover { background: var(--accent-light); }
+    tbody td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+    tbody td:first-child { font-weight: 500; color: var(--ink); }
+    .highlight-row td { background: var(--accent-light) !important; color: var(--accent); font-weight: 600; }
+    .calc-box { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; margin: 1.5rem 0; }
+    .calc-box h2 { margin-top: 0; }
+    .calc-row { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; margin-bottom: 1rem; }
+    .calc-group { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 120px; }
+    .calc-group label { font-size: 13px; color: var(--ink-muted); }
+    .calc-group input, .calc-group select { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 16px; font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); outline: none; transition: border-color 0.15s; }
+    .calc-group input:focus, .calc-group select:focus { border-color: var(--accent); }
+    .calc-btn { background: var(--accent); color: #fff; border: none; border-radius: 8px; padding: 10px 24px; font-size: 15px; font-family: 'DM Sans', sans-serif; font-weight: 500; cursor: pointer; transition: opacity 0.15s; white-space: nowrap; }
+    .calc-btn:hover { opacity: 0.88; }
+    .calc-result { background: var(--green-light); border: 1px solid #b7dfc8; border-radius: 10px; padding: 1rem 1.25rem; font-size: 1.05rem; color: var(--green); font-weight: 500; display: none; }
+    .calc-result.visible { display: block; }
+    .tip { background: var(--accent-light); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.5rem 0; font-size: 14px; color: var(--ink-muted); }
+    .tip strong { color: var(--accent); }
+    .related-links { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; margin: 2rem 0; }
+    .related-links h3 { margin-top: 0; font-family: 'Playfair Display', serif; font-size: 1.1rem; }
+    .related-links { overflow-x: auto; } .related-links-inner { display: flex; flex-wrap: nowrap; gap: 8px; } .related-links a { display: inline-block; white-space: nowrap; background: var(--accent-light); color: var(--accent); text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 14px; margin: 4px 4px 4px 0; transition: background 0.15s; }
+    .related-links a:hover { background: #f9d5cb; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-weight: 500; color: var(--ink); margin-bottom: 0.4rem; font-size: 15px; }
+    .faq-a { font-size: 14px; color: var(--ink-muted); margin: 0; }
+    footer { border-top: 1px solid var(--border); text-align: center; padding: 2rem 1.5rem; font-size: 13px; color: var(--ink-muted); background: var(--white); }
+    footer nav { margin-top: 0.75rem; }
+    footer nav a { color: var(--ink-muted); text-decoration: none; margin: 0 0.75rem; font-size: 13px; }
+    footer nav a:hover { background: #f0cfc0; }
+    @media (max-width: 520px) { .calc-row { flex-direction: column; } .calc-btn { width: 100%; } nav { display: none; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-name" href="/">MeasureUpNow</a>
+    <nav>
+      <a href="/cups-to-gallons.html">Cups → Gallons</a>
+      <a href="/ounces-in-a-cup.html">Ounces → Cups</a>
+      <a href="/teaspoons-in-a-tablespoon.html">Tsp → Tbsp</a>
+      <a href="/tablespoons-in-a-cup.html">Tbsp → Cups</a>
+      <a href="/ml-in-a-cup.html">ml → Cups</a>
+      <a href="/grams-in-a-cup.html">Grams → Cups</a>
+    </nav>
+  </div>
+</header>
+
+<div style="display:flex; justify-content:center; padding: 1rem 1.5rem 0;">
+  <div class="ad-slot ad-top">Advertisement</div>
+</div>
+
+<main>
+  <section class="hero">
+    <h1>Grams to Cups Converter</h1>
+    <span class="ingredient-note">⚠️ Grams to cups depends on the ingredient</span>
+    <p class="hero-sub">Unlike liquid measurements, converting grams to cups depends on what you're measuring. Select your ingredient below for an instant accurate answer.</p>
+  </section>
+
+  <div class="quick-grid">
+    <div class="quick-card"><span class="q-num">120g</span><span class="q-label">per cup of flour</span></div>
+    <div class="quick-card"><span class="q-num">200g</span><span class="q-label">per cup of sugar</span></div>
+    <div class="quick-card"><span class="q-num">227g</span><span class="q-label">per cup of butter</span></div>
+    <div class="quick-card"><span class="q-num">185g</span><span class="q-label">per cup of rice</span></div>
+  </div>
+
+  <div class="calc-box">
+    <h2>Grams to Cups Calculator</h2>
+    <p style="margin-bottom:1.25rem; font-size:14px;">Select your ingredient and enter the amount to convert instantly.</p>
+    <div class="calc-row">
+      <div class="calc-group">
+        <label for="ingredient">Ingredient</label>
+        <select id="ingredient">
+          <option value="120">All-purpose flour</option>
+          <option value="200">White sugar (granulated)</option>
+          <option value="213">Brown sugar (packed)</option>
+          <option value="100">Powdered / icing sugar</option>
+          <option value="227">Butter</option>
+          <option value="240">Water / milk</option>
+          <option value="185">White rice (uncooked)</option>
+          <option value="200">Rolled oats</option>
+          <option value="170">Honey</option>
+          <option value="128">Cocoa powder</option>
+          <option value="180">Chocolate chips</option>
+          <option value="150">Almond flour</option>
+        </select>
+      </div>
+      <div class="calc-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" value="100" min="0" step="any" />
+      </div>
+      <div class="calc-group">
+        <label for="direction">Convert</label>
+        <select id="direction">
+          <option value="to_cups">Grams → Cups</option>
+          <option value="to_grams">Cups → Grams</option>
+        </select>
+      </div>
+      <button class="calc-btn" onclick="convert()">Convert</button>
+    </div>
+    <div class="calc-result" id="result-box"></div>
+  </div>
+
+  <div class="ad-slot ad-mid">Advertisement</div>
+
+  <h2>Grams to Cups by Ingredient</h2>
+  <p>This table shows how many grams are in one cup of the most common cooking and baking ingredients.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Ingredient</th><th>1 Cup</th><th>½ Cup</th><th>¼ Cup</th><th>⅓ Cup</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row"><td>All-purpose flour</td><td>120g</td><td>60g</td><td>30g</td><td>40g</td></tr>
+        <tr><td>White sugar</td><td>200g</td><td>100g</td><td>50g</td><td>67g</td></tr>
+        <tr><td>Brown sugar (packed)</td><td>213g</td><td>107g</td><td>53g</td><td>71g</td></tr>
+        <tr><td>Powdered / icing sugar</td><td>100g</td><td>50g</td><td>25g</td><td>33g</td></tr>
+        <tr><td>Butter</td><td>227g</td><td>114g</td><td>57g</td><td>76g</td></tr>
+        <tr><td>Water / milk</td><td>240g</td><td>120g</td><td>60g</td><td>80g</td></tr>
+        <tr><td>White rice (uncooked)</td><td>185g</td><td>93g</td><td>46g</td><td>62g</td></tr>
+        <tr><td>Rolled oats</td><td>90g</td><td>45g</td><td>23g</td><td>30g</td></tr>
+        <tr><td>Honey</td><td>340g</td><td>170g</td><td>85g</td><td>113g</td></tr>
+        <tr><td>Cocoa powder</td><td>100g</td><td>50g</td><td>25g</td><td>33g</td></tr>
+        <tr><td>Chocolate chips</td><td>170g</td><td>85g</td><td>43g</td><td>57g</td></tr>
+        <tr><td>Almond flour</td><td>96g</td><td>48g</td><td>24g</td><td>32g</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip">
+    <strong>Pro baking tip:</strong> Always weigh ingredients with a kitchen scale for the most accurate results. Cups can vary depending on how tightly you pack the ingredient — especially flour and brown sugar!
+  </div>
+
+  <h2>Why Grams and Cups Don't Convert Simply</h2>
+  <p>Cups measure <strong>volume</strong> — how much space something takes up. Grams measure <strong>weight</strong>. A cup of flour weighs much less than a cup of honey because honey is much denser.</p>
+
+  <h3>The flour problem</h3>
+  <p>Flour is the trickiest ingredient to measure by cup. If you scoop flour directly from the bag, you can pack in up to 50% more than if you spoon it lightly into the cup. This is why professional bakers always weigh flour in grams rather than measuring by cup.</p>
+
+  <div class="ad-slot ad-bottom">Advertisement</div>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <p class="faq-q">How many grams in a cup of flour?</p>
+    <p class="faq-a">120 grams of all-purpose flour per cup, if measured correctly by spooning flour lightly into the cup and leveling it off. Scooping directly from the bag can give you up to 180g.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">How many grams in a cup of sugar?</p>
+    <p class="faq-a">200 grams of white granulated sugar per cup. Brown sugar packed tightly is about 213 grams per cup. Powdered sugar is lighter at about 100 grams per cup.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">How many grams in a cup of butter?</p>
+    <p class="faq-a">227 grams per cup. This equals 2 standard US butter sticks. Half a cup of butter is 114 grams or 1 stick.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">How many grams in a cup of rice?</p>
+    <p class="faq-a">About 185 grams of uncooked white rice per cup. Brown rice is slightly heavier at around 190 grams per cup.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">How many grams in a cup of water?</p>
+    <p class="faq-a">240 grams. Water is one of the few ingredients where grams and milliliters are almost identical — 1ml of water weighs 1 gram, and 1 cup = 240ml.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">How many grams in a cup of oats?</p>
+    <p class="faq-a">About 90 grams of rolled oats per cup. Oats are very light and fluffy so a cup weighs much less than you might expect.</p>
+  </div>
+
+  <div class="related-links">
+    <h3>More Kitchen Conversions</h3>
+    <div style="display:flex; flex-wrap:nowrap; gap:8px; overflow-x:auto; padding-bottom:4px;">
+      <a href="/cups-to-gallons.html">Cups to Gallons</a>
+      <a href="/ounces-in-a-cup.html">Ounces to Cups</a>
+      <a href="/teaspoons-in-a-tablespoon.html">Tsp to Tbsp</a>
+      <a href="/tablespoons-in-a-cup.html">Tbsp to Cups</a>
+      <a href="/ml-in-a-cup.html">ml to Cups</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 MeasureUpNow.com · Free Kitchen Measurement Tools</p>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/cups-to-gallons.html">Cups to Gallons</a>
+    <a href="/ounces-in-a-cup.html">Ounces to Cups</a>
+    <a href="/teaspoons-in-a-tablespoon.html">Tsp to Tbsp</a>
+    <a href="/tablespoons-in-a-cup.html">Tbsp to Cups</a>
+    <a href="/ml-in-a-cup.html">ml to Cups</a>
+    <a href="/grams-in-a-cup.html">Grams to Cups</a>
+  </nav>
+</footer>
+
+<script>
+  function convert() {
+    const gramsPerCup = parseFloat(document.getElementById('ingredient').value);
+    const amount = parseFloat(document.getElementById('amount').value);
+    const direction = document.getElementById('direction').value;
+    const box = document.getElementById('result-box');
+    const ingredientName = document.getElementById('ingredient').options[document.getElementById('ingredient').selectedIndex].text;
+    if (isNaN(amount) || amount < 0) { box.textContent = 'Please enter a valid number.'; box.classList.add('visible'); return; }
+    if (direction === 'to_cups') {
+      const cups = parseFloat((amount / gramsPerCup).toFixed(4));
+      box.innerHTML = `<strong>${amount}g of ${ingredientName}</strong> = <strong>${cups} cups</strong>`;
+    } else {
+      const grams = parseFloat((amount * gramsPerCup).toFixed(1));
+      box.innerHTML = `<strong>${amount} cups of ${ingredientName}</strong> = <strong>${grams}g</strong>`;
+    }
+    box.classList.add('visible');
+  }
+  document.getElementById('amount').addEventListener('keydown', e => { if (e.key === 'Enter') convert(); });
+</script>
+</body>
+</html>
