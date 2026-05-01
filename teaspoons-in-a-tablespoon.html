@@ -103,12 +103,11 @@
       justify-content: center;
     }
     .header-inner {
-    width: 100%;
-    max-width: 760px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+      width: 100%;
+      max-width: 760px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     .site-name {
       font-family: 'Playfair Display', serif;
@@ -117,8 +116,15 @@
       color: var(--accent);
       text-decoration: none;
       letter-spacing: -0.02em;
-    }nav { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: center; }
-    nav a { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; white-space: nowrap; background: var(--accent-light); padding: 5px 11px; border-radius: 20px; transition: background 0.15s; }
+    }
+    nav a {
+      font-size: 13px;
+      color: var(--ink-muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: color 0.15s;
+      font-weight: 500;
+    }
     nav a:hover { background: #f0cfc0; }
 
     main {
@@ -340,8 +346,25 @@
 <body>
 
 <header>
-  <div class="header-inner">
-    <a class="site-name" href="/">MeasureUpNow</a>
+  <div class="header-top">
+    <a href="/" class="logo-wrap">
+      <svg class="logo-icon" viewBox="0 0 680 680" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="340" cy="340" r="320" fill="#C17A5A"/>
+        <circle cx="340" cy="340" r="295" fill="#FAF0E8"/>
+        <rect x="255" y="240" width="170" height="190" rx="8" fill="none" stroke="#C17A5A" stroke-width="12"/>
+        <path d="M425 260 L470 240 L470 280 L425 300" fill="#C17A5A"/>
+        <path d="M255 280 Q210 280 210 320 Q210 360 255 360" fill="none" stroke="#C17A5A" stroke-width="12" stroke-linecap="round"/>
+        <line x1="270" y1="300" x2="310" y2="300" stroke="#C17A5A" stroke-width="7" stroke-linecap="round"/>
+        <line x1="270" y1="340" x2="320" y2="340" stroke="#C17A5A" stroke-width="7" stroke-linecap="round"/>
+        <line x1="270" y1="380" x2="310" y2="380" stroke="#C17A5A" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+      <span class="site-name">MeasureUpNow</span>
+    </a>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-wrap" id="main-nav">
     <nav>
       <a href="/cups-to-gallons.html">Cups → Gallons</a>
       <a href="/ounces-in-a-cup.html">Ounces → Cups</a>
