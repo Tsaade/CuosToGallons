@@ -303,7 +303,11 @@
 <script>
   function toggleNav() {
     const nav = document.getElementById('main-nav');
-    nav.classList.toggle('open');
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
   }
 </script>
 </body>
