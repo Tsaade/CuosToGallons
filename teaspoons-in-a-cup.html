@@ -34,10 +34,18 @@
     .site-name { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; color: var(--accent); text-decoration: none; letter-spacing: -0.02em; white-space: nowrap; padding-bottom: 8px; }
     .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
     .hamburger span { display: block; width: 24px; height: 2px; background: var(--accent); border-radius: 2px; transition: all 0.2s; }
+    /* Category Nav */
     .nav-wrap { border-top: 1px solid var(--border); padding: 0.5rem 1.5rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; max-width: 960px; margin: 0 auto; width: 100%; }
-    nav a { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; white-space: nowrap; background: var(--accent-light); padding: 5px 11px; border-radius: 20px; transition: background 0.15s; }
-    nav a:hover { background: #f0cfc0; }
-    nav a.active { background: var(--accent); color: var(--white); }
+    .nav-category { position: relative; display: inline-block; }
+    .nav-cat-btn { font-size: 11px; font-weight: 600; white-space: nowrap; background: var(--white); color: var(--accent); padding: 0; border-radius: 20px; border: 1.5px solid var(--accent); cursor: pointer; font-family: 'DM Sans', sans-serif; transition: all 0.15s; width: 90px; height: 28px; text-align: center; display: inline-flex; align-items: center; justify-content: center; }
+    .nav-cat-btn:hover { background: var(--accent); color: var(--white); }
+    .nav-cat-btn:hover { opacity: 0.85; }
+    .nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: var(--white); border: 1px solid var(--border); border-radius: 0 8px 8px 8px; padding: 6px; min-width: 160px; z-index: 200; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .nav-dropdown.open { display: block; }
+    .nav-dropdown a { display: block; font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; white-space: nowrap; background: var(--accent-light); padding: 5px 11px; border-radius: 20px; margin: 3px 0; transition: background 0.15s; }
+    .nav-dropdown a:hover { background: #f0cfc0; }
+    .nav-dropdown a.active { background: var(--accent); color: var(--white); }
+    @media (max-width: 600px) { .hamburger { display: flex; } .nav-wrap { display: none; padding: 0.75rem 1rem; flex-direction: column; align-items: flex-start; } .nav-wrap.open { display: flex; } .nav-dropdown { position: static; border-radius: 8px; margin-top: 4px; box-shadow: none; } }
     @media (max-width: 600px) { .hamburger { display: flex; } .nav-wrap { display: none; padding: 0.75rem 1rem; } .nav-wrap.open { display: flex; } .site-name { font-size: 17px; } }
     main { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
     .hero { text-align: center; padding: 2.5rem 0 2rem; }
@@ -119,27 +127,62 @@
     </button>
   </div>
   <div class="nav-wrap" id="main-nav">
-    <nav>
-      <a href="/cups-to-gallons.html">Cups → Gallons</a>
-      <a href="/ounces-in-a-cup.html">Ounces → Cups</a>
-      <a href="/teaspoons-in-a-tablespoon.html">Tsp → Tbsp</a>
-      <a href="/tablespoons-in-a-cup.html">Tbsp → Cups</a>
-      <a href="/ml-in-a-cup.html">ml → Cups</a>
-      <a href="/grams-in-a-cup.html">Grams → Cups</a>
-      <a href="/cups-in-a-quart.html">Cups → Quarts</a>
-      <a href="/ounces-in-a-pound.html">Oz → Pounds</a>
-      <a href="/celsius-to-fahrenheit.html">°C → °F</a>
-      <a href="/butter-sticks-to-cups.html">Butter → Cups</a>
-      <a href="/grams-to-ounces.html">Grams → Oz</a>
-      <a href="/cups-in-a-pint.html">Cups → Pints</a>
-      <a href="/ounces-in-a-gallon.html">Oz → Gallons</a>
-      <a href="/teaspoons-in-a-cup.html" class="active">Tsp → Cups</a>
-      <a href="/grams-in-a-tablespoon.html">Grams → Tbsp</a>
-      <a href="/grams-in-a-cup-of-sugar.html">Sugar → Grams</a>
-      <a href="/grams-in-a-cup-of-flour.html">Flour → Grams</a>
-      <a href="/grams-in-a-cup-of-butter.html">Butter → Grams</a>
-      <a href="/ml-in-a-teaspoon.html">ml → Tsp</a>
-    </nav>
+    <div class="nav-category">
+      <button class="nav-cat-btn" onclick="toggleCat(this)">🥛 Cups</button>
+      <div class="nav-dropdown">
+        <a href="/cups-to-gallons.html">Cups → Gallons</a>
+        <a href="/cups-in-a-quart.html">Cups → Quarts</a>
+        <a href="/cups-in-a-pint.html">Cups → Pints</a>
+        <a href="/tablespoons-in-a-cup.html">Tbsp → Cups</a>
+        <a href="/teaspoons-in-a-cup.html" class="active">Tsp → Cups</a>
+      </div>
+    </div>
+    <div class="nav-category">
+      <button class="nav-cat-btn" onclick="toggleCat(this)">⚖️ Ounces</button>
+      <div class="nav-dropdown">
+        <a href="/ounces-in-a-cup.html">Ounces → Cups</a>
+        <a href="/ounces-in-a-pound.html">Oz → Pounds</a>
+        <a href="/ounces-in-a-gallon.html">Oz → Gallons</a>
+        <a href="/grams-to-ounces.html">Grams → Oz</a>
+      </div>
+    </div>
+    <div class="nav-category">
+      <button class="nav-cat-btn" onclick="toggleCat(this)">📏 Grams</button>
+      <div class="nav-dropdown">
+        <a href="/grams-in-a-cup.html">Grams → Cups</a>
+        <a href="/grams-in-a-tablespoon.html">Grams → Tbsp</a>
+        <a href="/grams-to-ounces.html">Grams → Oz</a>
+        <a href="/grams-in-a-cup-of-sugar.html">Sugar → Grams</a>
+        <a href="/grams-in-a-cup-of-flour.html">Flour → Grams</a>
+        <a href="/grams-in-a-cup-of-butter.html">Butter → Grams</a>
+      </div>
+    </div>
+    <div class="nav-category">
+      <button class="nav-cat-btn" onclick="toggleCat(this)">💧 Milliliters</button>
+      <div class="nav-dropdown">
+        <a href="/ml-in-a-cup.html">ml → Cups</a>
+        <a href="/ml-in-a-teaspoon.html">ml → Tsp</a>
+      </div>
+    </div>
+    <div class="nav-category">
+      <button class="nav-cat-btn" onclick="toggleCat(this)">🧈 Butter</button>
+      <div class="nav-dropdown">
+        <a href="/butter-sticks-to-cups.html">Butter → Cups</a>
+        <a href="/grams-in-a-cup-of-butter.html">Butter → Grams</a>
+      </div>
+    </div>
+    <div class="nav-category">
+      <button class="nav-cat-btn" onclick="toggleCat(this)">🌡️ Temp</button>
+      <div class="nav-dropdown">
+        <a href="/celsius-to-fahrenheit.html">°C → °F</a>
+      </div>
+    </div>
+    <div class="nav-category">
+      <button class="nav-cat-btn" onclick="toggleCat(this)">⚗️ More</button>
+      <div class="nav-dropdown">
+        <a href="/teaspoons-in-a-tablespoon.html">Tsp → Tbsp</a>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -280,14 +323,21 @@
 </footer>
 
 <script>
-  function toggleNav() {
-    const nav = document.getElementById('main-nav');
-    if (nav.style.display === 'flex') {
-      nav.style.display = 'none';
-    } else {
-      nav.style.display = 'flex';
-    }
+  function toggleCat(btn) {
+    const dropdown = btn.nextElementSibling;
+    const allDropdowns = document.querySelectorAll('.nav-dropdown');
+    const allBtns = document.querySelectorAll('.nav-cat-btn');
+    allDropdowns.forEach(d => { if (d !== dropdown) d.classList.remove('open'); });
+    allBtns.forEach(b => { if (b !== btn) b.classList.remove('open'); });
+    dropdown.classList.toggle('open');
+    btn.classList.toggle('open');
   }
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.nav-category')) {
+      document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+      document.querySelectorAll('.nav-cat-btn').forEach(b => b.classList.remove('open'));
+    }
+  });
 
   const toTsp = { teaspoons: 1, cups: 48, tablespoons: 3 };
 
