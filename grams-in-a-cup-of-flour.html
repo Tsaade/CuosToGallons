@@ -311,6 +311,11 @@
 </footer>
 
 <script>
+  function toggleNav() {
+    const nav = document.getElementById('main-nav');
+    if (nav.style.display === 'flex') { nav.style.display = 'none'; }
+    else { nav.style.display = 'flex'; }
+  }
   function toggleCat(btn) {
     const dropdown = btn.nextElementSibling;
     const allDropdowns = document.querySelectorAll('.nav-dropdown');
@@ -321,7 +326,7 @@
     btn.classList.toggle('open');
   }
   document.addEventListener('click', function(e) {
-    if (!e.target.closest('.nav-category')) {
+    if (!e.target.closest('.nav-category') && !e.target.closest('.hamburger')) {
       document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
       document.querySelectorAll('.nav-cat-btn').forEach(b => b.classList.remove('open'));
     }
