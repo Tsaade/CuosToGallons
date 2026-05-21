@@ -1,5 +1,125 @@
 [[redirects]]
-  from = "/*.html"
-  to = "/:splat"
+  from = "/cups-to-gallons.html"
+  to = "/cups-to-gallons"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ounces-in-a-cup.html"
+  to = "/ounces-in-a-cup"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/teaspoons-in-a-tablespoon.html"
+  to = "/teaspoons-in-a-tablespoon"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tablespoons-in-a-cup.html"
+  to = "/tablespoons-in-a-cup"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ml-in-a-cup.html"
+  to = "/ml-in-a-cup"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grams-in-a-cup.html"
+  to = "/grams-in-a-cup"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cups-in-a-quart.html"
+  to = "/cups-in-a-quart"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ounces-in-a-pound.html"
+  to = "/ounces-in-a-pound"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/celsius-to-fahrenheit.html"
+  to = "/celsius-to-fahrenheit"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/butter-sticks-to-cups.html"
+  to = "/butter-sticks-to-cups"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grams-to-ounces.html"
+  to = "/grams-to-ounces"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cups-in-a-pint.html"
+  to = "/cups-in-a-pint"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ounces-in-a-gallon.html"
+  to = "/ounces-in-a-gallon"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/teaspoons-in-a-cup.html"
+  to = "/teaspoons-in-a-cup"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grams-in-a-tablespoon.html"
+  to = "/grams-in-a-tablespoon"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grams-in-a-cup-of-sugar.html"
+  to = "/grams-in-a-cup-of-sugar"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grams-in-a-cup-of-flour.html"
+  to = "/grams-in-a-cup-of-flour"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grams-in-a-cup-of-butter.html"
+  to = "/grams-in-a-cup-of-butter"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ml-in-a-teaspoon.html"
+  to = "/ml-in-a-teaspoon"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ml-in-a-tablespoon.html"
+  to = "/ml-in-a-tablespoon"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ounces-in-a-liter.html"
+  to = "/ounces-in-a-liter"
   status = 301
   force = true
