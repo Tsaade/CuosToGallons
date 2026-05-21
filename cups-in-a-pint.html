@@ -94,6 +94,9 @@
     .faq-a { font-size: 14px; color: var(--ink-muted); margin: 0; }
     footer { border-top: 1px solid var(--border); text-align: center; padding: 2rem 1.5rem; font-size: 13px; color: var(--ink-muted); background: var(--white); }
     @media (max-width: 520px) { .calc-row { flex-direction: column; } .calc-btn { width: 100%; } }
+    /* measureupnow-watermark */
+    body::before { content: ""; position: fixed; inset: 0; background-image: url("MyLogo.jpg"); background-repeat: no-repeat; background-position: center center; background-size: 520px auto; opacity: 0.055; pointer-events: none; z-index: 0; }
+    body > * { position: relative; z-index: 1; }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMNCV4Y3ZY"></script>
@@ -108,19 +111,7 @@
 <header>
   <div class="header-top">
     <a href="/" class="logo-wrap">
-      <svg class="logo-icon" viewBox="0 0 680 680" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="340" cy="340" r="320" fill="#C17A5A"/>
-        <circle cx="340" cy="340" r="295" fill="#FAF0E8"/>
-        <rect x="255" y="200" width="170" height="190" rx="8" fill="none" stroke="#C17A5A" stroke-width="12"/>
-        <path d="M425 220 L470 200 L470 240 L425 260" fill="#C17A5A"/>
-        <path d="M255 240 Q210 240 210 280 Q210 320 255 320" fill="none" stroke="#C17A5A" stroke-width="12" stroke-linecap="round"/>
-        <line x1="272" y1="260" x2="300" y2="260" stroke="#C17A5A" stroke-width="7" stroke-linecap="round"/>
-        <line x1="272" y1="295" x2="305" y2="295" stroke="#C17A5A" stroke-width="7" stroke-linecap="round"/>
-        <line x1="272" y1="330" x2="300" y2="330" stroke="#C17A5A" stroke-width="7" stroke-linecap="round"/>
-        <rect x="100" y="410" width="480" height="130" fill="#FAF0E8"/>
-        <text x="340" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700"><tspan fill="#C17A5A">MeasureUpNow</tspan></text>
-        <text x="340" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan fill="#3D2B1F">Kitchen Converters</tspan></text>
-      </svg>
+      <img src="Site_Logo.jpg" alt="MeasureUpNow Kitchen Converters" class="logo-icon" style="border-radius:50%;">
       <span class="site-name">MeasureUpNow</span>
     </a>
     <button class="hamburger" onclick="toggleNav()" aria-label="Toggle navigation">
