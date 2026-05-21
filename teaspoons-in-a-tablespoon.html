@@ -335,7 +335,7 @@
     .nav-dropdown a { display: block; font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; white-space: nowrap; background: var(--accent-light); padding: 5px 11px; border-radius: 20px; transition: background 0.15s; }
     .nav-dropdown a:hover { background: #f0cfc0; }
     .nav-dropdown a.active { background: var(--accent); color: var(--white); }
-    @media (max-width: 600px) { .hamburger { display: flex; } .nav-wrap { display: none; padding: 0.75rem 1rem; } .nav-wrap.open { display: flex; } .site-name { font-size: 17px; } }
+    @media (max-width: 600px) { .hamburger { display: flex; } .nav-wrap { display: none; padding: 0.75rem 1rem; flex-direction: column; align-items: flex-start; } .nav-wrap.open { display: flex; } .nav-dropdown { position: static; border-radius: 8px; margin-top: 4px; box-shadow: none; } .site-name { font-size: 22px; } .logo-icon { width: 60px; height: 60px; } body { overflow-x: hidden; } main { padding-left: 1rem; padding-right: 1rem; } .quick-grid { grid-template-columns: repeat(2, 1fr); } }
   </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMNCV4Y3ZY"></script>

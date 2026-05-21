@@ -135,9 +135,11 @@
     .nav-dropdown a.active { background: var(--accent); color: var(--white); }
     @media (max-width: 600px) {
       .hamburger { display: flex; }
-      .nav-wrap { display: none; padding: 0.75rem 1rem; }
+      .nav-wrap { display: none; padding: 0.75rem 1rem; flex-direction: column; align-items: flex-start; }
       .nav-wrap.open { display: flex; }
-      .site-name { font-size: 17px; }
+      .nav-dropdown { position: static; border-radius: 8px; margin-top: 4px; box-shadow: none; }
+      .site-name { font-size: 22px; }
+      .logo-icon { width: 60px; height: 60px; }
     }
 
     /* ── TOP AD ── */
@@ -459,6 +461,19 @@
     @media (max-width: 600px) {
       nav { display: none; }
       .facts-strip { justify-content: flex-start; }
+      body { overflow-x: hidden; }
+      main, .hero, .ad-bar, .quick-ref, .why-section { max-width: 100vw; overflow-x: hidden; padding-left: 1rem; padding-right: 1rem; }
+      .cards-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 0; }
+      .conv-card { padding: 0.75rem; }
+      .card-icon { font-size: 1.4rem; }
+      .card-title { font-size: 13px; }
+      .card-answer { font-size: 12px; }
+      .card-desc { display: none; }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .ref-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-section { overflow-x: hidden; }
+      .hero { padding: 3rem 1rem 2.5rem; }
+      h1 { font-size: 1.8rem !important; }
     }
   </style>
 <!-- Google tag (gtag.js) -->
@@ -686,6 +701,41 @@
       <div class="card-title">Grams in a Tablespoon</div>
       <span class="card-answer">Varies by ingredient</span>
       <p class="card-desc">Convert tablespoons to grams for flour, sugar, butter, salt and more. Includes a full ingredient chart.</p>
+      <span class="card-link">Open converter</span>
+    </a>
+    <a href="/grams-in-a-cup-of-sugar" class="conv-card">
+      <span class="card-icon">🍬</span>
+      <div class="card-title">Grams in a Cup of Sugar</div>
+      <span class="card-answer">1 cup = 200g</span>
+      <p class="card-desc">Convert cups of sugar to grams for granulated, brown, powdered and more sugar types.</p>
+      <span class="card-link">Open converter</span>
+    </a>
+    <a href="/grams-in-a-cup-of-flour" class="conv-card">
+      <span class="card-icon">🌾</span>
+      <div class="card-title">Grams in a Cup of Flour</div>
+      <span class="card-answer">1 cup = 120g</span>
+      <p class="card-desc">Convert cups of flour to grams for all-purpose, bread, cake, whole wheat and more flour types.</p>
+      <span class="card-link">Open converter</span>
+    </a>
+    <a href="/grams-in-a-cup-of-butter" class="conv-card">
+      <span class="card-icon">🧈</span>
+      <div class="card-title">Grams in a Cup of Butter</div>
+      <span class="card-answer">1 cup = 227g</span>
+      <p class="card-desc">Convert cups of butter to grams, sticks and tablespoons. Includes a full butter conversion chart.</p>
+      <span class="card-link">Open converter</span>
+    </a>
+    <a href="/ml-in-a-teaspoon" class="conv-card">
+      <span class="card-icon">💧</span>
+      <div class="card-title">ml in a Teaspoon</div>
+      <span class="card-answer">1 tsp = 4.93ml</span>
+      <p class="card-desc">Convert milliliters to teaspoons and tablespoons. Perfect for medicine doses and international recipes.</p>
+      <span class="card-link">Open converter</span>
+    </a>
+    <a href="/ml-in-a-tablespoon" class="conv-card">
+      <span class="card-icon">🧪</span>
+      <div class="card-title">ml in a Tablespoon</div>
+      <span class="card-answer">1 tbsp = 14.79ml</span>
+      <p class="card-desc">Convert milliliters to tablespoons and teaspoons. Essential for cooking international recipes.</p>
       <span class="card-link">Open converter</span>
     </a>
   </div>
