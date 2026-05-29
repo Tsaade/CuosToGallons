@@ -442,21 +442,20 @@
     /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border);
-      text-align: center;
-      padding: 2rem 1.5rem;
+      padding: 2.5rem 1.5rem;
       font-size: 13px;
       color: var(--ink-muted);
       background: var(--white);
     }
-    footer nav { margin-top: 0.75rem; }
-    footer nav a {
-      color: var(--ink-muted);
-      text-decoration: none;
-      margin: 0 0.75rem;
-      font-size: 13px;
-      transition: color 0.15s;
-    }
-    footer nav a:hover { color: var(--accent); }
+    .footer-inner { max-width: 960px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; }
+    .footer-brand .site-name-footer { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--accent); }
+    .footer-brand p { margin-top: 0.5rem; max-width: 240px; line-height: 1.6; }
+    .footer-links h4 { font-weight: 600; color: var(--ink); margin-bottom: 0.75rem; font-size: 14px; }
+    .footer-links a { display: block; color: var(--ink-muted); text-decoration: none; margin-bottom: 0.4rem; transition: color 0.15s; }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-bottom { max-width: 960px; margin: 1.5rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; }
+    .footer-bottom a { color: var(--ink-muted); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--accent); }
 
     @media (max-width: 600px) {
       nav { display: none; }
@@ -914,5 +913,4 @@
 </script>
 </body>
 </html>
-
 
